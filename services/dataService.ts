@@ -19,13 +19,13 @@ import {
 // --- CONFIGURATION ---
 // Updated to new Cloud Database Config
 const firebaseConfig = {
-  apiKey: "AIzaSyCKzYfIK2Y7dsD98EP3HuI1xM2YILBOfEI",
-  authDomain: "gen-lang-client-0492210931.firebaseapp.com",
-  projectId: "gen-lang-client-0492210931",
-  storageBucket: "gen-lang-client-0492210931.firebasestorage.app",
-  messagingSenderId: "154342314134",
-  appId: "1:154342314134:web:0138ed8fbb00b5cd1f32b7",
-  measurementId: "G-HVJCYL31N7"
+  apiKey: "AIzaSyCCvqXUJrSI1HtiCasJ8gcAryD3u1PjYEo",
+  authDomain: "gen-lang-client-0396741881.firebaseapp.com",
+  projectId: "gen-lang-client-0396741881",
+  storageBucket: "gen-lang-client-0396741881.firebasestorage.app",
+  messagingSenderId: "557495140766",
+  appId: "1:557495140766:web:80603a9d305e42c4d1d68f",
+  measurementId: "G-D3G208W8Y0"
 };
 
 let db: Firestore | null = null;
@@ -52,8 +52,9 @@ const KEYS = {
 
 // Valid User List
 const VALID_USERS = [
-  'Elaine', 'Rex', 'Albee', 'Tiamoona', 'Maggie', 
-  'Leo', 'Yina', 'Nina', 'Shan'
+  'Aaron', 'TiamVida', 'Hannah', 'Lala', 'Rain', 
+  'Ssyuan', 'Mark', 'Neil', 'Mimi', 'Nico', 
+  'Yoyo', 'Nina', 'Flower', 'Niic'
 ];
 
 // Promotion Config for New Year
@@ -944,7 +945,7 @@ export const dataService = {
     const normalizedInput = inputName.trim().toLowerCase();
     const match = VALID_USERS.find(u => u.toLowerCase() === normalizedInput);
     if (!match) return null;
-    const role = match.toLowerCase() === 'tiamoona' ? UserRole.ADMIN : UserRole.DESIGNER;
+    const role = match.toLowerCase() === 'tiamvida' ? UserRole.ADMIN : UserRole.DESIGNER;
     return { id: match, name: match, role };
   },
 
