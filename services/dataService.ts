@@ -54,7 +54,7 @@ const KEYS = {
 const VALID_USERS = [
   'Aaron', 'TiamVida', 'Hannah', 'Lala', 'Rain', 
   'Ssyuan', 'Mark', 'Neil', 'Mimi', 'Nico', 
-  'Yoyo', 'Nina', 'Flower', 'Niic'
+  'Yoyo', 'Nina', 'Flower', 'Niic', 'DC'
 ];
 
 // Promotion Config for New Year
